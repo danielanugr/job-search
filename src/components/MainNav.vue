@@ -29,11 +29,11 @@
             v-else
             data-test="login-button"
             text="Sign in"
-            type="primary"
             @click="loginUser"
           />
         </div>
       </div>
+      <Subnav />
     </div>
   </header>
 </template>
@@ -41,12 +41,14 @@
 <script>
 import ActionButton from "@/components/ActionButton.vue";
 import ProfileImage from "@/components/ProfileImage.vue";
+import Subnav from "@/components/Subnav.vue";
 
 export default {
   name: "MainNav",
   components: {
     ActionButton,
     ProfileImage,
+    Subnav,
   },
   data() {
     return {
